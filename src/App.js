@@ -26,7 +26,7 @@ import Jendelos from './component/story/jen-delos-reyes';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={window.location.pathname || ''}>
     <div className="App">
      
        <Route exact path="/" render={() => <Home />}/>
